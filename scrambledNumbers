@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Application Website</title>
+        <style>
+			.number {
+				background: red;
+        </style>
+    </head>
+    <body>
+        <p> Hopefully numbers like <span class="number">123</span>,<br>
+			and all others will be replaced with random ones that are constantly changing. <br>
+			You don't know that <span class="number">200</span> is <span class="number">20</span> * <span class="number">10</span> or that the date is posted here: <span class="number">26</span>/<span class="number">10</span>/<span class="number">2000</span>. <br>
+			Maybe they can be unscrambled...
+		<script>
+			var numberNds = document.getElementsByClassName("number");
+			for(var i = 0; i < numberNds.length; i++) {
+				var lengthOfNumber = numberNds[i].innerHTML.length;
+				numberNds[i].innerHTML = Math.round(Math.random * pow(10, lengthOfNumber);
+			}
+		</script>
+            
+        
+    </body>
+</html>
