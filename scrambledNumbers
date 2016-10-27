@@ -8,21 +8,60 @@
 
         <title>Application Website</title>
         <style>
+			html {
+			background: Honeydew;
+			font-family: serif;
+			}
+			p {
+			font-size: 30px;
+			}
 			.number {
-				background: red;
+				background: Honeydew;
+				font-family: monospace;
+			}
+			.number:hover {
+				background: gray;
+			}
+			#title {
+			font-size: 60px;
+			color: indigo;
+			border: 20px ridged silver;}
         </style>
     </head>
     <body>
-        <p> Hopefully numbers like <span class="number">123</span>,<br>
+		<h1 id="title">Scrambled Numbers!</h1>
+        <p>Hopefully numbers like <span class="number">123</span>,<br>
 			and all others will be replaced with random ones that are constantly changing. <br>
-			You don't know that <span class="number">200</span> is <span class="number">20</span> * <span class="number">10</span> or that the date is posted here: <span class="number">26</span>/<span class="number">10</span>/<span class="number">2000</span>. <br>
-			Maybe they can be unscrambled...
+			You don't know that <span class="number">200</span> is <span class="number">20</span> * <span class="number">10</span> or that the date edited is posted here: <span class="number">26</span>/<span class="number">10</span>/<span class="number">2000</span>. <br>
+			Maybe these numbers can be unscrambled...</p>
 		<script>
+			//Turns ever number span's text into an index in an array.
 			var numberNds = document.getElementsByClassName("number");
+			var originalLengths = []
+			//Creates a new array out of numberNds' elements' lengths
 			for(var i = 0; i < numberNds.length; i++) {
-				var lengthOfNumber = numberNds[i].innerHTML.length;
-				numberNds[i].innerHTML = Math.round(Math.random * pow(10, lengthOfNumber);
+				originalLengths.push(numberNds[i].innerHTML.length);
+				}
+			//Replaces every numberNds html tag with a random number of the same length
+			function randomNumbers() {
+				for(var i = 0; i < numberNds.length; i++) {
+					var randomReplacement = Math.round(Math.random() * Math.pow(10, originalLengths[i]));
+					//Clean up getting rid of longer or shorter number lengths.
+					if(String(randomReplacement).length < originalLengths[i]) {
+					randomReplacement = randomReplacement * Math.pow(10, originalLengths[i] - String(randomReplacement).length);
+					}
+					if(String(randomReplacement).length > originalLengths[i]) {
+					
+					randomReplacement = Math.round(randomReplacement * Math.pow(10, originalLengths[i] - String(randomReplacement)));
+					console.log(randomReplacement);
+					}
+					if(randomReplacement )
+					numberNds[i].innerHTML = randomReplacement;
+				}
 			}
+			//Replaces each number with new numbers every few ms.
+			setInterval(randomNumbers, 10);
+			//Add in password to unscramble numbers.
 		</script>
             
         
