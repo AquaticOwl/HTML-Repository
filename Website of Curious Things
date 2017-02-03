@@ -5,80 +5,85 @@
     <head>
 
         <meta charset="utf-8">
+		<meta name="contact" content="send me any feedback at lsaddler00@gmail.com">
 
         <title>AquaticOwl's Programming Website</title>
-        <style>
-        #website-title {
-            
-        }
-        #Owl {
-            border: 7px ridge white;
-            width: 275px;
-            position: absolute;
-            top: 112px;
-            left: 480px;
-            z-index: 1;
-        }
-        .limerick {
-            background-color: silver;
-            border: 2px solid red;
-            padding: 8px;
-            line-height: 2.2em;
-        }
-        .section-title{
-            font-family: fantasy;
-        }
-        #Everything {
-            background-color: rgb(255, 242, 191);
-            border: 6px solid black;
-            padding: 7px;
-        }
-        h1 {
-            font-size: 45px;
-            color:blue;
-            padding: 6px;
-            border: 3px ridged black;
-            background-color: lightsteelblue;
-        }
-        #swirly-sine-wave {
-            border: 5px solid midnightblue;
-            width: 50.74%;
-        }
-        #Prompt {
-            position: absolute;
-            top: 500px;
-            left: 165px;
-            border: 5px dotted indigo;
-            padding: 4px;
-            color: firebrick;
-        }
-        #barn-house {
-            position: absolute;
-            top: 50px;
-            left: 1150px;
-            border: 10px ridge darkgoldenrod;
-        }
-        </style>
+		<!--Links to the CSS stored on my PC. Make sure to upload the CSS with it for going online or just copy and paste it into a style tag.
+		<link rel="stylesheet" href="C:\Users\Lance\Desktop\HTML Projects\AOPWebsite_Style.css">-->
+		<style>
+			body {
+				background-color: ghostwhite;
+			}
+			#website-title {
+				
+			}
+			#Owl {
+				border: 7px ridge white;
+				width: 275px;
+				position: relative;
+				z-index: 1;
+			}
+			.limerick {
+				background-color: silver;
+				border: 2px solid red;
+				padding: 8px;
+				line-height: 2.2em;
+				width: 100%;
+			}
+			.section-title{
+				font-family: fantasy;
+			}
+			h1 {
+				font-size: 45px;
+				color:blue;
+				padding: 6px;
+				border: 3px ridged black;
+				background-color: lightsteelblue;
+			}
+			#Prompt {
+				position: absolute;
+				top: 500px;
+				left: 165px;
+				border: 5px dotted indigo;
+				padding: 4px;
+				color: firebrick;
+			}
+			.math {
+				color: green;
+			}
+		</style>
     </head>
     <body>
-        <div id="Everything">
-            <h1 id="website-title"> AquaticOwl's Programming Website
-                <img id="Owl" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Barn_Owl_RWD1.jpg" alt="An Owl">
-            </h1>
-            <p class="limerick">
-                <span class="section-title">Limerick</span> <br>
-                There was a young man of <strong>Japan</strong> <br>
-                Whose limericks never would <strong>scan</strong>. <br>
-                When asked why this <em>was</em>,<br>
-                He replied "It's <em>because</em> <br>
-                I always try to fit as many syllables into the last line as ever I possibly <strong>can</strong>." <br>
-                from <a target="_blank" href="https://en.wikipedia.org/wiki/Limerick_(poetry)"> Wikipedia </a>
-            </p>
-            <h3 id="Prompt">Adjust the number in line 21 for cool effects!</h3>
-            <h2><a target="_blank" href="https://www.khanacademy.org/computer-programming/swirly-sine-wave/4590432240140288">Swirly Sine Wave</a></h2>
-            <div id="swirly-sine-wave"><script src="https://www.khanacademy.org/computer-programming/swirly-sine-wave/4590432240140288/embed.js?editor=yes&amp;buttons=no&amp;author=no&amp;embed=yes"></script></div> <p>Made using: <a target="_blank" href="http://www.khanacademy.org/computer-programming">Khan Academy Computer Science</a>.</p>
-            <!-- Can other JavaScript Programs be placed here? -->
-            <img id="barn-house" src="http://www.rosetotherescue.com/wp-content/uploads/2012/06/do-anything.jpg" alt="A great quote">
-        </div>
+		<h1 id="website-title"> AquaticOwl's Programming Website</h1>
+		<img id="Owl" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Barn_Owl_RWD1.jpg" alt="An Owl">
+		<p class="limerick">
+			<span class="section-title">Limerick</span> <br>
+			There was a young man of <strong>Japan</strong> <br>
+			Whose limericks never would <strong>scan</strong>. <br>
+			When asked why this <em>was</em>,<br>
+			He replied "It's <em>because</em> <br>
+			I always try to fit as many syllables into the last line as ever I possibly <strong>can</strong>." <br>
+			from <a target="_blank" href="https://en.wikipedia.org/wiki/Limerick_(poetry)"> Wikipedia </a>
+		</p>
+		<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML" target="_blank">Latest HTML Tutorial Page<br></a>
+		<h3 id="Prompt">Adjust the number in line 21 for cool effects!</h3>
+		<a target="_blank" href="https://www.khanacademy.org/computer-programming/swirly-sine-wave/4590432240140288">Swirly Sine Wave</a>
+		</h2>
+			<!-- Why is this to the right of the <a> tag? -->
+			<script src="https://www.khanacademy.org/computer-programming/swirly-sine-wave/4590432240140288/embed.js?editor=yes&amp;buttons=no&amp;author=no&amp;embed=yes">
+			</script>
+		<p>Made using: <a target="_blank" href="http://www.khanacademy.org/computer-programming">Khan Academy Computer Science</a>.</p>
+			<h3>Proof that (-a)(-b) = ab</h3>
+			<p>
+			Suppose we have a number, R, that takes the form: ab + (-a)b + (-a)(-b) <br>
+			Using the <span class="math">distributive property</span>, it can be rewritten as: R = (a + -a)b + (-a)(-b) <br>
+			This simplifies to (0)b + (-a)(-b) or R = (-a)(-b) <br>
+			We can also rewrite the original equation as: R = ab + -a(b + -b) <br>
+			Similarly, this simplifies to R = ab <br>
+			Thus, through the <span class="math">transitive property</span>, (-a)(-b) = ab
+		</p>
+		<script>
+		
+		</script>
     </body>
 </html>
