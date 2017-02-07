@@ -1,0 +1,28 @@
+html {
+	text-align: center;
+}
+h1 {
+	
+}
+.math {
+	color: rgb(0, 0, 255);
+}
+.page {
+	font-size: 2em;
+}
+#home {
+	font-size: 2em;
+}
+#swirly-title {
+	font-size: 35px;
+}
+#Prompt {
+	position: relative;
+	/*messes up formatting, but fits box to the text
+	display: inline-block;*/
+	margin: auto;
+	border: 5px dotted indigo;
+	padding: 4px;
+	color: firebrick;
+	width: fit;
+}
